@@ -17,4 +17,4 @@ def du(path)
   end
   byteSize
 end
-puts du("./")
+# puts du("./")

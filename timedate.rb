@@ -2,10 +2,6 @@ require 'time'
 require 'date'
 
 # (1)
-def jparsedate1st(time)
-  time.strftime("%Y年%m月%d日%p%I時%M分%S秒").gsub(/(AM|PM)/, "AM" => "午前", "PM" => "午後")
-end
-
 def jparsedate(str)
   ary = str.split(/\D+/)
   year = ary[0]
@@ -20,7 +16,7 @@ def jparsedate(str)
   sec = ary[5]
   Time.mktime(year, month, day, hour, min, sec)
 end
-# p jparsedate2nd("2013年5月30日午後8時17分50秒")
+# p jparsedate("2013年5月30日午後8時17分50秒")
 
 
 # (2)
@@ -73,8 +69,8 @@ class Calender
     end
   end
 end
-# foo = Calender.new
-# foo.putCal
+# sample = Calender.new
+# sample.putCal
 
 
 

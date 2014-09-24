@@ -6,10 +6,10 @@ def my_collect(obj, &block)
   end
   ary
 end
-# ary = my_collect([1, 2, 3, 4, 5]) do |i|
-#   i * 2
-# end
-# p ary
+ary = my_collect([1, 2, 3, 4, 5]) do |i|
+  i * 2
+end
+p ary
 
 
 # (2)
