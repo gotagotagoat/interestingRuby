@@ -48,12 +48,4 @@ def tail(lineNum, fileName)
   File.read(fileName).each_line { |line| ary << line }
   return ary[-lineNum..-1]
 end
-puts tail(3, 'twinkle.txt')
-
-def tailKai(lineNum, fileName)
-  File.open(fileName) do |io|
-    io.seek(lineNum, IO::SEEK_SET)
-    return io
-  end
-end
 # puts tail(3, 'twinkle.txt')

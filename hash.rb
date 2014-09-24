@@ -1,21 +1,3 @@
-# (0)
-# count = Hash.new(0)
-
-# File.open(ARGV[0]) do |f|
-#   f.each_line do |line|
-#     words = line.split
-#     words.each do |word|
-#       count[word] += 1
-#     end
-#   end
-# end
-
-# count.sort { |a, b|
-#   a[1] <=> b[1]
-# }.each do |key, value|
-#   print "#{key}: #{value}\n"
-# end
-
 # (1)
 wday = {:sunday => "日曜日", :monday => "月曜日", :tuesday => "火曜日", :wednesday => "水曜日", :thursday => "木曜日", :friday => "金曜日", :suturday => "土曜日" }
 # p wday[:sunday]
